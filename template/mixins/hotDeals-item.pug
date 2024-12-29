@@ -1,0 +1,44 @@
+mixin hotDeals-item(img1, img2, name, price)
+    article
+        div.product-inner 
+            div.img-block 
+                a(href="#") 
+                    img(src=img1, alt="")
+                    img(src=img2, alt="")
+                div.add-to-link 
+                    ul 
+                        li 
+                            a(href="#")
+                                i(class="fa-solid fa-magnifying-glass")
+                        li 
+                            a(href="#")
+                                i(class="fa-regular fa-heart")
+                        li 
+                            a(href="#")
+                                i(class="fa-solid fa-rotate")
+        div.product-desc 
+            a(href="#") STUDIO DESIGN
+            h2 
+                a(href="#") #{name}
+            div 
+                ul 
+                    li #{price}
+        div.availability-list   
+            | Availability:
+            span  300 In Stock
+        div.clockdiv 
+            div 
+                span.day
+                    | 0
+                    p days
+                span.hours
+                    | 0
+                    p hours
+                span.mins
+                    | 00
+                    p mins
+                span.day
+                    | 00
+                    p sec
+        div.button-cart 
+            a(href="#") ADD TO CART 

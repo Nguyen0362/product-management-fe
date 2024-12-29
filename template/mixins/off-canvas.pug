@@ -1,0 +1,142 @@
+mixin off-canvas()
+    div.offcanvas-overlay.offcanva-close
+
+    //- offcanvas mobile wishlist
+    div.offcanvas-mobile-wishlist.offcanvas
+        div.head
+            span.title Wislist
+            button.offcanva-close 
+                i(class="fa-solid fa-xmark")
+        div.body
+            ul.minicart-product-list 
+                li 
+                    a(href="#") 
+                        img(src="assets/images/1.jpg", alt="")
+                    div.content
+                        a(href="#").title Điện thoại
+                        span.quantity-price
+                            | 1 x 
+                            span 2.400.000đ
+                        a(href="#").remove x
+                li 
+                    a(href="#") 
+                        img(src="assets/images/1.jpg", alt="")
+                    div.content
+                        a(href="#").title Máy chơi game
+                        span.quantity-price
+                            | 1 x 
+                            span 700.000đ
+                        a(href="#").remove x
+                li 
+                    a(href="#") 
+                        img(src="assets/images/1.jpg", alt="")
+                    div.content
+                        a(href="#").title Tivi
+                        span.quantity-price
+                            | 1 x 
+                            span 20.000.000đ
+                        a(href="#").remove x
+        div.button
+            a(href="#") view wishlist
+    //- End offcanvas mobile wishlist
+
+    //- offcanvas mobile cart
+    div.offcanvas-mobile-cart.offcanvas
+        div.head
+            span.title Cart
+            button.offcanva-close 
+                i(class="fa-solid fa-xmark")
+        div.body
+            ul.minicart-product-list 
+                li 
+                    a(href="#") 
+                        img(src="assets/images/1.jpg", alt="")
+                    div.content
+                        a(href="#").title Điện thoại
+                        span.quantity-price
+                            | 1 x 
+                            span 2.400.000đ
+                        a(href="#").remove x
+                li 
+                    a(href="#") 
+                        img(src="assets/images/1.jpg", alt="")
+                    div.content
+                        a(href="#").title Máy chơi game
+                        span.quantity-price
+                            | 1 x 
+                            span 700.000đ
+                        a(href="#").remove x
+                li 
+                    a(href="#") 
+                        img(src="assets/images/1.jpg", alt="")
+                    div.content
+                        a(href="#").title Tivi
+                        span.quantity-price
+                            | 1 x 
+                            span 20.000.000đ
+                        a(href="#").remove x
+        div.foot
+            div.sub-total
+                strong Tổng tiền: 
+                span 29.400.000đ
+            div.button
+                a(href="#").button-view view cart
+                a(href="#").button-checkout checkout
+                p Free Shipping on All Orders Over $100!
+                             
+
+    //- End offcanvas mobile cart
+
+    //- offcanvas mobile menu
+    div.offcanvas-mobile-menu.offcanvas
+        div.head
+            span.title 
+            button.offcanva-close 
+                i(class="fa-solid fa-xmark")
+        div.offcanvas-menu-search
+            form(action="#")
+                input(type="text", name="", placeholder="Tìm kiếm...")
+                button(type="submit")
+                    i(class="fa-solid fa-magnifying-glass")
+        div.offcanvas-menu
+            ul
+                li 
+                    a(href="#") HOME 
+                    span 
+                        <i class="fa-solid fa-plus"></i>
+                li 
+                    a(href="#") SHOP 
+                    span 
+                        <i class="fa-solid fa-plus"></i>
+                li 
+                    a(href="#") PAGES 
+                    span 
+                        <i class="fa-solid fa-plus"></i>
+                li 
+                    a(href="#") BLOG 
+                    span 
+                        <i class="fa-solid fa-plus"></i>
+                li 
+                    a(href="#") CUSTOM MENU 
+                    span 
+                        <i class="fa-solid fa-plus"></i>
+                li 
+                    a(href="#") CONTACT US 
+        div.offcanvas-social
+            ul 
+                li 
+                    a(href="#")
+                        i(class="fa-brands fa-facebook-f") 
+                li 
+                    a(href="#")
+                        i(class="fa-brands fa-twitter")
+                li 
+                    a(href="#")
+                        i(class="fa-brands fa-google")
+                li 
+                    a(href="#")
+                        i(class="fa-brands fa-youtube")
+                li 
+                    a(href="#")
+                        i(class="fa-brands fa-square-instagram")
+    //- End offcanvas mobile menu

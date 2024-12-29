@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> trang chủ</title>
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top__wrap">
+            <div class="header-top__logo"><a href="#"><img src="assets/images/logo.png" alt=""></a></div>
+            <div class="header-top__right">
+              <div class="header-top__right-search">
+                    <div class="header-top__search">
+                      <form action="#"><i class="fa-solid fa-angle-down"></i>
+                        <div class="header-top__category">
+                          <select>
+                            <option value="1">Tất cả danh mục</option>
+                          </select>
+                        </div>
+                        <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                        <button type="submit">Tìm kiếm</button>
+                      </form>
+                    </div>
+              </div>
+              <div class="header-top__tools"> <a class="offcanvas-toggle offcanvas-wishlist" href="#"><i class="fa-regular fa-heart"></i><span class="title">Wishlist</span></a><a class="offcanvas-toggle offcanvas-cart" href="#"><i class="fa-solid fa-cart-shopping"></i><span class="title">Cart</span></a>
+                <div class="offcanvas-toggle offcanvas-menu"><i class="fa-solid fa-bars"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__search-mobile">
+        <div class="container">
+              <div class="header-top__search">
+                <form action="#"><i class="fa-solid fa-angle-down"></i>
+                  <div class="header-top__category">
+                    <select>
+                      <option value="1">Tất cả danh mục</option>
+                    </select>
+                  </div>
+                  <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="container">
+          <div class="header-menu__wrap">
+            <div class="header-menu__left">
+              <h4 class="header-menu__title"><i class="fa-solid fa-bars"></i>Browse Categories<i class="fa-solid fa-angle-down"></i></h4>
+              <ul class="display-none"> 
+                <li> <a href="#">Television</a></li>
+                <li> <a href="#">Digital Cameras</a></li>
+              </ul>
+            </div>
+            <div class="header-menu__right">
+              <nav> 
+                <ul> 
+                  <li>
+                     Home <i class="fa-solid fa-angle-down"></i></li>
+                  <li>
+                     shop <i class="fa-solid fa-angle-down"></i></li>
+                  <li>
+                     Pages <i class="fa-solid fa-angle-down"></i></li>
+                  <li>
+                     Blog <i class="fa-solid fa-angle-down"></i></li>
+                  <li>
+                     Custom Menu <i class="fa-solid fa-angle-down"></i></li>
+                  <li>
+                     Contact Us </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="offcanvas-overlay offcanva-close"></div>
+    <div class="offcanvas-mobile-wishlist offcanvas">
+      <div class="head"><span class="title">Wislist</span>
+        <button class="offcanva-close"> <i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="body">
+        <ul class="minicart-product-list"> 
+          <li> <a href="#"> <img src="assets/images/1.jpg" alt=""/></a>
+            <div class="content"><a class="title" href="#">Điện thoại</a><span class="quantity-price">1 x <span>2.400.000đ</span></span><a class="remove" href="#">x</a></div>
+          </li>
+          <li> <a href="#"> <img src="assets/images/1.jpg" alt=""/></a>
+            <div class="content"><a class="title" href="#">Máy chơi game</a><span class="quantity-price">1 x <span>700.000đ</span></span><a class="remove" href="#">x</a></div>
+          </li>
+          <li> <a href="#"> <img src="assets/images/1.jpg" alt=""/></a>
+            <div class="content"><a class="title" href="#">Tivi</a><span class="quantity-price">1 x <span>20.000.000đ</span></span><a class="remove" href="#">x</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="button"><a href="#">view wishlist</a></div>
+    </div>
+    <div class="offcanvas-mobile-cart offcanvas">
+      <div class="head"><span class="title">Cart</span>
+        <button class="offcanva-close"> <i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="body">
+        <ul class="minicart-product-list"> 
+          <li> <a href="#"> <img src="assets/images/1.jpg" alt=""/></a>
+            <div class="content"><a class="title" href="#">Điện thoại</a><span class="quantity-price">1 x <span>2.400.000đ</span></span><a class="remove" href="#">x</a></div>
+          </li>
+          <li> <a href="#"> <img src="assets/images/1.jpg" alt=""/></a>
+            <div class="content"><a class="title" href="#">Máy chơi game</a><span class="quantity-price">1 x <span>700.000đ</span></span><a class="remove" href="#">x</a></div>
+          </li>
+          <li> <a href="#"> <img src="assets/images/1.jpg" alt=""/></a>
+            <div class="content"><a class="title" href="#">Tivi</a><span class="quantity-price">1 x <span>20.000.000đ</span></span><a class="remove" href="#">x</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="foot">
+        <div class="sub-total"><strong>Tổng tiền: </strong><span>29.400.000đ</span></div>
+        <div class="button"><a class="button-view" href="#">view cart</a><a class="button-checkout" href="#">checkout</a>
+          <p>Free Shipping on All Orders Over $100!</p>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas-mobile-menu offcanvas">
+      <div class="head"><span class="title"> </span>
+        <button class="offcanva-close"> <i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="offcanvas-menu-search">
+        <form action="#">
+          <input type="text" name="" placeholder="Tìm kiếm..."/>
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+      <div class="offcanvas-menu">
+        <ul>
+          <li> <a href="#">HOME </a><span>
+               <i class="fa-solid fa-plus"></i></span></li>
+          <li> <a href="#">SHOP </a><span>
+               <i class="fa-solid fa-plus"></i></span></li>
+          <li> <a href="#">PAGES </a><span>
+               <i class="fa-solid fa-plus"></i></span></li>
+          <li> <a href="#">BLOG </a><span>
+               <i class="fa-solid fa-plus"></i></span></li>
+          <li> <a href="#">CUSTOM MENU </a><span>
+               <i class="fa-solid fa-plus"></i></span></li>
+          <li> <a href="#">CONTACT US </a></li>
+        </ul>
+      </div>
+      <div class="offcanvas-social">
+        <ul> 
+          <li> <a href="#"><i class="fa-brands fa-facebook-f"> </i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-google"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li> <a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider-area" style="background-image: url(&quot;assets/images/sample-1.jpg&quot;)">
+            <div class="container">
+              <div class="slider-area__wrap">
+                <div class="slider-area__slide">
+                  <h1 class="title animate__animated animate__delay-1s">Xbox One Pro<br/>Wireless Controller</h1>
+                  <p class="desc animate__animated animate__delay-1 3s">Prevolution Pro Controller </p><a class="button animate__animated animate__delay-1400ms" href="#">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-area" style="background-image: url(&quot;assets/images/sample-2.jpg&quot;)">
+            <div class="container">
+              <div class="slider-area__wrap">
+                <div class="slider-area__slide">
+                  <h1 class="title animate__animated animate__delay-1s">Bobovr Z4 Virtual<br/>Reality 3D Glasses</h1>
+                  <p class="desc animate__animated animate__delay-1 3s">Virtual reality through a new lens </p><a class="button animate__animated animate__delay-1400ms" href="#">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-area" style="background-image: url(&quot;assets/images/sample-3.jpg&quot;)">
+            <div class="container">
+              <div class="slider-area__wrap">
+                <div class="slider-area__slide">
+                  <h1 class="title animate__animated animate__delay-1s">Portable Wireless<br/>Bluetooth Speaker</h1>
+                  <p class="desc animate__animated animate__delay-1 3s">With Colorful LED Light </p><a class="button animate__animated animate__delay-1400ms" href="#">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="static-area">
+      <div class="container">
+        <div class="static-area__wrap">
+          <div class="static-area__item">
+            <div class="static-area__img"><img src="assets/images/static-icons-1.png"/></div>
+            <div class="static-area__content"> 
+              <h4>Free Shipping</h4>
+              <p>On all orders over $75.00</p>
+            </div>
+          </div>
+          <div class="static-area__item">
+            <div class="static-area__img"><img src="assets/images/static-icons-2.png"/></div>
+            <div class="static-area__content"> 
+              <h4>Free Returns</h4>
+              <p>Returns are free within 9 days</p>
+            </div>
+          </div>
+          <div class="static-area__item">
+            <div class="static-area__img"><img src="assets/images/static-icons-3.png"/></div>
+            <div class="static-area__content"> 
+              <h4>100% Payment Secure</h4>
+              <p>Your payment are safe with us.</p>
+            </div>
+          </div>
+          <div class="static-area__item">
+            <div class="static-area__img"><img src="assets/images/static-icons-4.png"/></div>
+            <div class="static-area__content"> 
+              <h4>Support 24/7</h4>
+              <p>Contact us 24 hours a day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-area">
+      <div class="container">
+        <div class="feature-area__wrap">
+          <div class="feature-area__products">
+            <div class="section-title">
+              <h2>Featured Products</h2>
+            </div>
+            <div class="feature-area__slide"><span class="slick-arrow prev slick-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-feature my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next slick-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+          <div class="feature-area__hotDeals">
+            <div class="section-title">
+              <h2>Hot Deals</h2>
+            </div>
+            <div class="feature-area__slide"><span class="slick-arrow prev hotDeals-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-hotDeals">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="availability-list">
+                              Availability:<span> 300 In Stock</span></div>
+                          <div class="clockdiv"> 
+                            <div> <span class="day">0
+                                <p>days</p></span><span class="hours">0
+                                <p>hours</p></span><span class="mins">00
+                                <p>mins</p></span><span class="day">00
+                                <p>sec</p></span></div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="availability-list">
+                              Availability:<span> 300 In Stock</span></div>
+                          <div class="clockdiv"> 
+                            <div> <span class="day">0
+                                <p>days</p></span><span class="hours">0
+                                <p>hours</p></span><span class="mins">00
+                                <p>mins</p></span><span class="day">00
+                                <p>sec</p></span></div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="feature-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="availability-list">
+                              Availability:<span> 300 In Stock</span></div>
+                          <div class="clockdiv"> 
+                            <div> <span class="day">0
+                                <p>days</p></span><span class="hours">0
+                                <p>hours</p></span><span class="mins">00
+                                <p>mins</p></span><span class="day">00
+                                <p>sec</p></span></div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next hotDeals-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-area"> 
+      <div class="container"> 
+        <div class="banner-area__item">
+          <div class="banner-area__wrap"> <a href="#"><img src="assets/images/1 (1).jpg" alt="" srcset=""/></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="best-seller-area">
+      <div class="container"> 
+        <div class="best-seller-area__wrap"> 
+          <div class="best-seller-area__title"> 
+            <div class="section-title">
+              <h2>Best Sellers</h2>
+            </div>
+            <div class="best-seller-area__slide"><span class="slick-arrow prev best-seller-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-best-seller my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="best-seller-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="best-seller-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="availability-list">
+                                Availability:<span> 300 In Stock</span></div>
+                            <p class="content">Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp;amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4</p>
+                            <div class="price"> 
+                              <ul> 
+                                <li>600.000đ</li>
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next best-seller-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-area-2">
+      <div class="container"> 
+        <div class="banner-area-2__row">
+          <div class="banner-area-2__left">
+            <div class="banner-area__item">
+              <div class="banner-area__wrap"> <a href="#"><img src="assets/images/2.jpg" alt="" srcset=""/></a></div>
+            </div>
+          </div>
+          <div class="banner-area-2__right">
+            <div class="banner-area__item">
+              <div class="banner-area__wrap"> <a href="#"><img src="assets/images/3.jpg" alt="" srcset=""/></a></div>
+            </div>
+            <div class="banner-area__item">
+              <div class="banner-area__wrap"> <a href="#"><img src="assets/images/3.jpg" alt="" srcset=""/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrival-area"> 
+      <div class="container"> 
+        <div class="section-title">
+          <h2>New Arrivals</h2>
+          <ul class="nav nav-tabs">    
+            <li> <a class="nav-link active" href="#tab-1" id="tab-1">Home Audio</a></li>
+            <li> <a class="nav-link" href="#tab-2" id="tab-2">Headphone</a></li>
+            <li> <a class="nav-link" href="#tab-3" id="tab-3">Cameras</a></li>
+          </ul>
+        </div>
+        <div class="tab-content"> 
+          <div class="tab-pane active" id="tab-1">
+            <div class="arrival-area__slide"><span class="slick-arrow prev tab1-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-tab-1 my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">Numkuda USB 2.0 Gamepad</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next tab1-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="arrival-area__slide"><span class="slick-arrow prev tab2-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-tab-2 my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/4.jpg" alt=""/><img src="assets/images/5.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next tab2-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="arrival-area__slide"><span class="slick-arrow prev tab3-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-tab-3 my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/8.jpg" alt=""/><img src="assets/images/9.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/8.jpg" alt=""/><img src="assets/images/9.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/8.jpg" alt=""/><img src="assets/images/9.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/8.jpg" alt=""/><img src="assets/images/9.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/8.jpg" alt=""/><img src="assets/images/9.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="arrivals-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/8.jpg" alt=""/><img src="assets/images/9.jpg" alt=""/></a>
+                              <div class="add-to-link"> 
+                                <ul> 
+                                  <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                  <li> <a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                  <li> <a href="#"><i class="fa-solid fa-rotate"></i></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-desc"> <a href="#">STUDIO DESIGN</a>
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="button-cart"> <a href="#">ADD TO CART </a></div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next tab3-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-area-3">
+      <div class="container"> 
+        <div class="banner-area-3__row">
+          <div class="banner-area__item">
+            <div class="banner-area__wrap"> <a href="#"><img src="assets/images/5 (1).jpg" alt="" srcset=""/></a></div>
+          </div>
+          <div class="banner-area__item">
+            <div class="banner-area__wrap"> <a href="#"><img src="assets/images/5 (1).jpg" alt="" srcset=""/></a></div>
+          </div>
+          <div class="banner-area__item">
+            <div class="banner-area__wrap"> <a href="#"><img src="assets/images/5 (1).jpg" alt="" srcset=""/></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category-slider-area">
+      <div class="container"> 
+        <div class="category-slider-area__wrap"> 
+          <div class="category-slider-area__item">
+            <div class="section-title">
+              <h2>New Arrivals</h2>
+            </div>
+            <div class="arrival-area__slide"><span class="slick-arrow prev category1-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-category-1 my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next category1-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+          <div class="category-slider-area__item">
+            <div class="section-title">
+              <h2>New Arrivals</h2>
+            </div>
+            <div class="arrival-area__slide"><span class="slick-arrow prev category2-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-category-2 my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next category2-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+          <div class="category-slider-area__item">
+            <div class="section-title">
+              <h2>New Arrivals</h2>
+            </div>
+            <div class="arrival-area__slide"><span class="slick-arrow prev category3-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-category-3 my-pd">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-slider-area__list">
+                      <div class="slide-item">
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                        <article>
+                          <div class="product-inner"> 
+                            <div class="img-block"> <a href="#"> <img src="assets/images/20.jpg" alt=""/><img src="assets/images/21.jpg" alt=""/></a></div>
+                          </div>
+                          <div class="product-desc"> 
+                            <h2> <a href="#">TCL 49S5 49'' 4k Ultra HD</a></h2>
+                            <div class="price"> 
+                              <ul> 
+                                <li>500.000đ</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next category3-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-area"> 
+      <div class="container"> 
+        <div class="brand-area__wrap"> 
+          <div class="swiper mySwiper-brand my-pd">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="brand-area__img"><a href="#"><img src="assets/images/2.png" alt="" srcset=""></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand-area__img"><a href="#"><img src="assets/images/2.png" alt="" srcset=""></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand-area__img"><a href="#"><img src="assets/images/2.png" alt="" srcset=""></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand-area__img"><a href="#"><img src="assets/images/2.png" alt="" srcset=""></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand-area__img"><a href="#"><img src="assets/images/2.png" alt="" srcset=""></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand-area__img"><a href="#"><img src="assets/images/2.png" alt="" srcset=""></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand-area__img"><a href="#"><img src="assets/images/2.png" alt="" srcset=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular-area"> 
+      <div class="container"> 
+        <div class="popular-area__wrap"> 
+          <div class="section-title">
+            <h2>Popular Categories</h2>
+          </div>
+          <div class="arrival-area__slide"><span class="slick-arrow prev popular-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+            <div class="swiper mySwiper-popular my-pd">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="popular-area__item"> 
+                    <div class="popular-area__img"> <a href="#"><img src="assets/images/1.jpg" alt=""></a></div>
+                    <div class="popular-area__discript"> 
+                      <h4>Phones & Accessories</h4>
+                      <ul> 
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                      </ul><a href="#">View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-area__item"> 
+                    <div class="popular-area__img"> <a href="#"><img src="assets/images/1.jpg" alt=""></a></div>
+                    <div class="popular-area__discript"> 
+                      <h4>Phones & Accessories</h4>
+                      <ul> 
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                      </ul><a href="#">View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-area__item"> 
+                    <div class="popular-area__img"> <a href="#"><img src="assets/images/1.jpg" alt=""></a></div>
+                    <div class="popular-area__discript"> 
+                      <h4>Phones & Accessories</h4>
+                      <ul> 
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                      </ul><a href="#">View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-area__item"> 
+                    <div class="popular-area__img"> <a href="#"><img src="assets/images/1.jpg" alt=""></a></div>
+                    <div class="popular-area__discript"> 
+                      <h4>Phones & Accessories</h4>
+                      <ul> 
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                      </ul><a href="#">View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-area__item"> 
+                    <div class="popular-area__img"> <a href="#"><img src="assets/images/1.jpg" alt=""></a></div>
+                    <div class="popular-area__discript"> 
+                      <h4>Phones & Accessories</h4>
+                      <ul> 
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                      </ul><a href="#">View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-area__item"> 
+                    <div class="popular-area__img"> <a href="#"><img src="assets/images/1.jpg" alt=""></a></div>
+                    <div class="popular-area__discript"> 
+                      <h4>Phones & Accessories</h4>
+                      <ul> 
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                      </ul><a href="#">View All</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="popular-area__item"> 
+                    <div class="popular-area__img"> <a href="#"><img src="assets/images/1.jpg" alt=""></a></div>
+                    <div class="popular-area__discript"> 
+                      <h4>Phones & Accessories</h4>
+                      <ul> 
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                        <li> <a href="#">Hot Categories</a></li>
+                      </ul><a href="#">View All</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><span class="slick-arrow next popular-button-next"><i class="fa-solid fa-angle-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="new-letter-area"> 
+      <div class="container"> 
+        <div class="new-letter-area__wrap"> 
+          <div class="new-letter-area__title"> 
+            <h2>Sign Up For Newsletters</h2>
+            <p>Be the First to Know. Sign up for newsletter today !</p>
+          </div>
+          <div class="new-letter-area__form"> 
+            <form action="#">
+              <div class="new-letter-area__signup"> 
+                <input class="email" type="email" placeholder="Enter your email here...">
+                <div class="clear"> 
+                  <input class="button" type="submit" value="Sign Up">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer-top"> 
+          <div class="footer-top__wrap"> 
+            <div class="footer-top__wedge wedge-1"> 
+              <div class="logo"> <a href="#"><img src="assets/images/logo.png" alt=""></a></div>
+              <p class="text-infor">
+                 We are a team of designers and developers that create high quality HTML template </p>
+              <div class="need-help">
+                <p class="address"> <span>Address:</span><span> 4710-4890 Breckinridge St, Fayetteville</span></p>
+                <p class="mail"> <span>Email:</span><a href="#"> support@hasthemes.com</a></p>
+                <p class="phone"> <span>Call Us:</span><a href="#"> (+800)123456789</a></p>
+              </div>
+            </div>
+            <div class="footer-top__wedge wedge-2">
+              <h4 class="footer-top__herading">
+                 Information</h4>
+              <div class="footer-top__links"> 
+                <ul> 
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-top__wedge wedge-3">
+              <h4 class="footer-top__herading">
+                 Information</h4>
+              <div class="footer-top__links"> 
+                <ul> 
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                  <li> <a href="#">Delivery</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-top__wedge wedge-4">
+              <h4 class="footer-top__herading">
+                 Information</h4><span class="slick-arrow prev footer-top-button-prev"><i class="fa-solid fa-angle-left"></i></span>
+              <div class="swiper mySwiper-footer-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="footer-top__item"> 
+                      <div class="img"> 
+                        <div class="thumbnail"><a href="#"> <img src="assets/images/blog-8.jpg" alt=""></a></div>
+                      </div>
+                      <div class="desc"> 
+                        <h4> <a href="#">This Is First Post For XipBlog</a></h4><span>
+                           Posted by <a href="#">Demo Hasthemes</a></span><span>jun 29, 2020 </span>
+                      </div>
+                    </div>
+                    <div class="footer-top__item"> 
+                      <div class="img"> 
+                        <div class="thumbnail"><a href="#"> <img src="assets/images/blog-8.jpg" alt=""></a></div>
+                      </div>
+                      <div class="desc"> 
+                        <h4> <a href="#">This Is First Post For XipBlog</a></h4><span>
+                           Posted by <a href="#">Demo Hasthemes</a></span><span>jun 29, 2020 </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="footer-top__item"> 
+                      <div class="img"> 
+                        <div class="thumbnail"><a href="#"> <img src="assets/images/blog-8.jpg" alt=""></a></div>
+                      </div>
+                      <div class="desc"> 
+                        <h4> <a href="#">This Is First Post For XipBlog</a></h4><span>
+                           Posted by <a href="#">Demo Hasthemes</a></span><span>jun 29, 2020 </span>
+                      </div>
+                    </div>
+                    <div class="footer-top__item"> 
+                      <div class="img"> 
+                        <div class="thumbnail"><a href="#"> <img src="assets/images/blog-8.jpg" alt=""></a></div>
+                      </div>
+                      <div class="desc"> 
+                        <h4> <a href="#">This Is First Post For XipBlog</a></h4><span>
+                           Posted by <a href="#">Demo Hasthemes</a></span><span>jun 29, 2020 </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="footer-top__item"> 
+                      <div class="img"> 
+                        <div class="thumbnail"><a href="#"> <img src="assets/images/blog-8.jpg" alt=""></a></div>
+                      </div>
+                      <div class="desc"> 
+                        <h4> <a href="#">This Is First Post For XipBlog</a></h4><span>
+                           Posted by <a href="#">Demo Hasthemes</a></span><span>jun 29, 2020 </span>
+                      </div>
+                    </div>
+                    <div class="footer-top__item"> 
+                      <div class="img"> 
+                        <div class="thumbnail"><a href="#"> <img src="assets/images/blog-8.jpg" alt=""></a></div>
+                      </div>
+                      <div class="desc"> 
+                        <h4> <a href="#">This Is First Post For XipBlog</a></h4><span>
+                           Posted by <a href="#">Demo Hasthemes</a></span><span>jun 29, 2020 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><span class="slick-arrow next footer-top-button-next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-center"> 
+          <div class="footer-center__wrap"> 
+            <div class="footer-center__payment"> 
+              <div class="title">
+                 Payment:       </div>
+              <div class="img"> <img src="assets/images/payment.png" alt=""></div>
+            </div>
+            <div class="footer-center__follow"> 
+              <div class="title">
+                 Follow Us: </div>
+              <div class="social-icon"> 
+                <ul> 
+                  <li class="facebook"> <a href="#"> <i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li class="twitter"> <a href="#"> <i class="fa-brands fa-twitter"></i></a></li>
+                  <li class="google"> <a href="#"> <i class="fa-brands fa-google"></i></a></li>
+                  <li class="youtube"> <a href="#"> <i class="fa-brands fa-youtube"></i></a></li>
+                  <li class="instagram"> <a href="#"> <i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-tags"> 
+          <div class="container"> 
+            <div class="tags-content"> 
+              <ul> 
+                <li> <a href="#">Online Shopping                      </a></li>
+                <li> <a href="#">Promotions                     </a></li>
+                <li> <a href="#">My Orders                   </a></li>
+                <li> <a href="#">Help                     </a></li>
+                <li> <a href="#">Customer  Service                    </a></li>
+                <li> <a href="#">Support                   </a></li>
+                <li> <a href="#">Most Populars                      </a></li>
+                <li> <a href="#">New Arrivals                      </a></li>
+                <li> <a href="#">Online Shopping                      </a></li>
+                <li> <a href="#">Promotions                     </a></li>
+                <li> <a href="#">My Orders                   </a></li>
+                <li> <a href="#">Help                     </a></li>
+                <li> <a href="#">Customer  Service                    </a></li>
+                <li> <a href="#">Support                   </a></li>
+                <li> <a href="#">Most Populars                      </a></li>
+                <li> <a href="#">New Arrivals                      </a></li>
+                <li> <a href="#">Special Products                    </a></li>
+                <li> <a href="#">Terms & Conditions                      </a></li>
+              </ul>
+            </div>
+            <p>
+               Copyright © <a href="#">HasThemes </a>All Rights Reserved            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

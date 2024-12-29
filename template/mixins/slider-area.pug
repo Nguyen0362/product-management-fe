@@ -1,0 +1,11 @@
+mixin slider-area(img, title1, title2, desc)
+    div(style=`background-image: url("assets/images/${img}")`).slider-area
+        div.container
+            div.slider-area__wrap
+                div.slider-area__slide
+                    h1.title.animate__animated.animate__delay-1s
+                        | #{title1}
+                        br
+                        | #{title2}
+                    p.desc.animate__animated.animate__delay-1.3s #{desc} 
+                    a(href="#").button.animate__animated.animate__delay-1400ms SHOP NOW

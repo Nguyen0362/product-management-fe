@@ -1,0 +1,13 @@
+mixin category-item(img1, img2, title, price)
+    article
+        div.product-inner 
+            div.img-block 
+                a(href="#") 
+                    img(src=img1, alt="")
+                    img(src=img2, alt="")
+        div.product-desc 
+            h2 
+                a(href="#") #{title}
+            div.price 
+                ul 
+                    li #{price}

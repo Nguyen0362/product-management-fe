@@ -1,0 +1,813 @@
+extends layouts/default.pug 
+include mixins/off-canvas.pug
+include mixins/slider-area.pug
+include mixins/static-area-item.pug
+include mixins/product-item.pug
+include mixins/hotDeals-item.pug
+include mixins/section-title.pug
+include mixins/best-seller-item.pug
+include mixins/banner-item.pug
+include mixins/tab-content-item.pug
+include mixins/category-item.pug
+
+block title 
+    title  trang chủ
+block main 
+    +off-canvas()
+    
+    //- slider area
+    div.swiper.mySwiper
+        div.swiper-wrapper
+            div.swiper-slide
+                +slider-area(
+                    "sample-1.jpg",
+                    "Xbox One Pro",
+                    "Wireless Controller",
+                    "Prevolution Pro Controller"
+                )
+            div.swiper-slide
+                +slider-area(
+                    "sample-2.jpg",
+                    "Bobovr Z4 Virtual",
+                    "Reality 3D Glasses",
+                    "Virtual reality through a new lens"
+                )
+            div.swiper-slide
+                +slider-area(
+                    "sample-3.jpg",
+                    "Portable Wireless",
+                    "Bluetooth Speaker",
+                    "With Colorful LED Light"
+                )
+        div.swiper-pagination
+    //- End slider area
+
+    //- stactic-area
+    div.static-area
+        div.container
+            div.static-area__wrap
+                +static-area-item(
+                    "assets/images/static-icons-1.png",
+                    "Free Shipping",
+                    "On all orders over $75.00"
+                )
+                +static-area-item(
+                    "assets/images/static-icons-2.png",
+                    "Free Returns",
+                    "Returns are free within 9 days"
+                )
+                +static-area-item(
+                    "assets/images/static-icons-3.png",
+                    "100% Payment Secure",
+                    "Your payment are safe with us."
+                )
+                +static-area-item(
+                    "assets/images/static-icons-4.png",
+                    "Support 24/7",
+                    "Contact us 24 hours a day"
+                )         
+    //- End stactic-area
+
+    //- Feature-area
+    div.feature-area
+        div.container
+            div.feature-area__wrap
+                //- feature area product
+                div.feature-area__products
+                    +section-title("Featured Products")
+                    div.feature-area__slide
+                        span.slick-arrow.prev.slick-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        div.swiper.mySwiper-feature.my-pd
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +product-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                                            +product-item(
+                                                "assets/images/4.jpg",
+                                                "assets/images/5.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +product-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                                            +product-item(
+                                                "assets/images/4.jpg",
+                                                "assets/images/5.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +product-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                                            +product-item(
+                                                "assets/images/4.jpg",
+                                                "assets/images/5.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +product-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                                            +product-item(
+                                                "assets/images/4.jpg",
+                                                "assets/images/5.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +product-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                                            +product-item(
+                                                "assets/images/4.jpg",
+                                                "assets/images/5.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                
+                        span.slick-arrow.next.slick-button-next
+                            i(class="fa-solid fa-angle-right")
+                //- End feature area product
+
+                //- feature area hotDeals
+                div.feature-area__hotDeals
+                    +section-title("Hot Deals") 
+                    div.feature-area__slide
+                        span.slick-arrow.prev.hotDeals-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        div.swiper.mySwiper-hotDeals
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +hotDeals-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +hotDeals-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.feature-area__list
+                                        div.slide-item
+                                            +hotDeals-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "Numkuda USB 2.0 Gamepad",
+                                                "500.000đ"
+                                            )
+                        span.slick-arrow.next.hotDeals-button-next
+                            i(class="fa-solid fa-angle-right")
+                //- End feature area hotDeals
+    //- End Feature-area
+
+    //- Banner-area
+    div.banner-area 
+        div.container 
+            +banner-item("assets/images/1 (1).jpg") 
+    //- End Banner-area
+
+    //- best seller area
+    div.best-seller-area
+        div.container 
+            div.best-seller-area__wrap 
+                div.best-seller-area__title 
+                    +section-title("Best Sellers")
+                    div.best-seller-area__slide
+                        span.slick-arrow.prev.best-seller-button-prev
+                                i(class="fa-solid fa-angle-left")
+                        div.swiper.mySwiper-best-seller.my-pd
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    div.best-seller-area__list
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.best-seller-area__list
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                                        div.slide-item
+                                            +best-seller-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "STUDIO DESIGN",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "300 In Stock",
+                                                "Android 8.1 (Oreo), Hisilicon Kirin 710 (12 nm), Octa-core (4x2.2 GHz Cortex-A73 &amp; 4x1.7 GHz Cortex-A53), Mali-G51 MP4",
+                                                "600.000đ",
+                                                "500.000đ"
+                                            )
+                        span.slick-arrow.next.best-seller-button-next
+                            i(class="fa-solid fa-angle-right")
+    //- End best seller area
+
+    //- Banner-area 2
+    div.banner-area-2
+        div.container 
+            div.banner-area-2__row
+                div.banner-area-2__left
+                    +banner-item("assets/images/2.jpg")
+                div.banner-area-2__right
+                    +banner-item("assets/images/3.jpg")
+                    +banner-item("assets/images/3.jpg")
+    //- End banner-area 2
+
+    //- arrivals-area
+    div.arrival-area 
+        div.container 
+            div.section-title
+                h2 New Arrivals
+                ul.nav.nav-tabs     
+                    li 
+                        a(href="#tab-1" id="tab-1" class="nav-link active") Home Audio
+                    li 
+                        a(href="#tab-2" id="tab-2" class="nav-link") Headphone
+                    li 
+                        a(href="#tab-3" id="tab-3" class="nav-link") Cameras
+            div.tab-content 
+                div(id="tab-1" class="tab-pane active")
+                    div.arrival-area__slide
+                        span.slick-arrow.prev.tab1-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        +tab-content-item(
+                            "1",
+                            "assets/images/20.jpg",
+                            "assets/images/21.jpg",
+                            "Numkuda USB 2.0 Gamepad",
+                            "500.000đ"
+                        )
+                        span.slick-arrow.next.tab1-button-next
+                            i(class="fa-solid fa-angle-right")
+                div(id="tab-2" class="tab-pane")
+                    div.arrival-area__slide
+                        span.slick-arrow.prev.tab2-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        +tab-content-item(
+                            "2",
+                            "assets/images/4.jpg",
+                            "assets/images/5.jpg",
+                            "TCL 49S5 49'' 4k Ultra HD",
+                            "500.000đ"
+                        )
+                        span.slick-arrow.next.tab2-button-next
+                            i(class="fa-solid fa-angle-right")
+                div(id="tab-3" class="tab-pane")
+                    div.arrival-area__slide
+                        span.slick-arrow.prev.tab3-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        +tab-content-item(
+                            "3",
+                            "assets/images/8.jpg",
+                            "assets/images/9.jpg",
+                            "TCL 49S5 49'' 4k Ultra HD",
+                            "500.000đ"
+                        )
+                        span.slick-arrow.next.tab3-button-next
+                            i(class="fa-solid fa-angle-right")
+    //- End arrivals-area
+
+    //- Banner-area 3
+    div.banner-area-3
+        div.container 
+            div.banner-area-3__row
+                +banner-item("assets/images/5 (1).jpg")
+                +banner-item("assets/images/5 (1).jpg")
+                +banner-item("assets/images/5 (1).jpg")
+    //- End banner-area 3
+
+    //- category slider area
+    div.category-slider-area
+        div.container 
+            div.category-slider-area__wrap 
+                div.category-slider-area__item
+                    div.section-title
+                        h2 New Arrivals
+                    div.arrival-area__slide
+                        span.slick-arrow.prev.category1-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        div.swiper.mySwiper-category-1.my-pd
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                        span.slick-arrow.next.category1-button-next
+                            i(class="fa-solid fa-angle-right")
+                div.category-slider-area__item
+                    div.section-title
+                        h2 New Arrivals
+                    div.arrival-area__slide
+                        span.slick-arrow.prev.category2-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        div.swiper.mySwiper-category-2.my-pd
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                        span.slick-arrow.next.category2-button-next
+                            i(class="fa-solid fa-angle-right")
+                div.category-slider-area__item
+                    div.section-title
+                        h2 New Arrivals
+                    div.arrival-area__slide
+                        span.slick-arrow.prev.category3-button-prev
+                            i(class="fa-solid fa-angle-left")
+                        div.swiper.mySwiper-category-3.my-pd
+                            div.swiper-wrapper
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                div.swiper-slide
+                                    div.category-slider-area__list
+                                        div.slide-item
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                                            +category-item(
+                                                "assets/images/20.jpg",
+                                                "assets/images/21.jpg",
+                                                "TCL 49S5 49'' 4k Ultra HD",
+                                                "500.000đ"
+                                            )
+                        span.slick-arrow.next.category3-button-next
+                            i(class="fa-solid fa-angle-right")
+    //- End category slider area
+
+    //- brand area
+    div.brand-area 
+        div.container 
+            div.brand-area__wrap 
+                div.swiper.mySwiper-brand.my-pd
+                    div.swiper-wrapper
+                        div.swiper-slide
+                            div.brand-area__img
+                                a(href="#")
+                                    img(src="assets/images/2.png", alt="", srcset="") 
+                        div.swiper-slide
+                            div.brand-area__img
+                                a(href="#")
+                                    img(src="assets/images/2.png", alt="", srcset="") 
+                        div.swiper-slide
+                            div.brand-area__img
+                                a(href="#")
+                                    img(src="assets/images/2.png", alt="", srcset="") 
+                        div.swiper-slide
+                            div.brand-area__img
+                                a(href="#")
+                                    img(src="assets/images/2.png", alt="", srcset="") 
+                        div.swiper-slide
+                            div.brand-area__img
+                                a(href="#")
+                                    img(src="assets/images/2.png", alt="", srcset="") 
+                        div.swiper-slide
+                            div.brand-area__img
+                                a(href="#")
+                                    img(src="assets/images/2.png", alt="", srcset="") 
+                        div.swiper-slide
+                            div.brand-area__img
+                                a(href="#")
+                                    img(src="assets/images/2.png", alt="", srcset="")             
+    //- End brand area
+
+    //- popular area
+    div.popular-area 
+        div.container 
+            div.popular-area__wrap 
+                div.section-title
+                    h2 Popular Categories
+                div.arrival-area__slide
+                    span.slick-arrow.prev.popular-button-prev
+                        i(class="fa-solid fa-angle-left")
+                    div.swiper.mySwiper-popular.my-pd
+                        div.swiper-wrapper
+                            div.swiper-slide
+                                div.popular-area__item 
+                                    div.popular-area__img 
+                                        a(href="#")
+                                            img(src="assets/images/1.jpg", alt="") 
+                                    div.popular-area__discript 
+                                        h4 Phones & Accessories
+                                        ul 
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                        a(href="#") View All
+                            div.swiper-slide
+                                div.popular-area__item 
+                                    div.popular-area__img 
+                                        a(href="#")
+                                            img(src="assets/images/1.jpg", alt="") 
+                                    div.popular-area__discript 
+                                        h4 Phones & Accessories
+                                        ul 
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                        a(href="#") View All
+                            div.swiper-slide
+                                div.popular-area__item 
+                                    div.popular-area__img 
+                                        a(href="#")
+                                            img(src="assets/images/1.jpg", alt="") 
+                                    div.popular-area__discript 
+                                        h4 Phones & Accessories
+                                        ul 
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                        a(href="#") View All
+                            div.swiper-slide
+                                div.popular-area__item 
+                                    div.popular-area__img 
+                                        a(href="#")
+                                            img(src="assets/images/1.jpg", alt="") 
+                                    div.popular-area__discript 
+                                        h4 Phones & Accessories
+                                        ul 
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                        a(href="#") View All
+                            div.swiper-slide
+                                div.popular-area__item 
+                                    div.popular-area__img 
+                                        a(href="#")
+                                            img(src="assets/images/1.jpg", alt="") 
+                                    div.popular-area__discript 
+                                        h4 Phones & Accessories
+                                        ul 
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                        a(href="#") View All
+                            div.swiper-slide
+                                div.popular-area__item 
+                                    div.popular-area__img 
+                                        a(href="#")
+                                            img(src="assets/images/1.jpg", alt="") 
+                                    div.popular-area__discript 
+                                        h4 Phones & Accessories
+                                        ul 
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                        a(href="#") View All
+                            div.swiper-slide
+                                div.popular-area__item 
+                                    div.popular-area__img 
+                                        a(href="#")
+                                            img(src="assets/images/1.jpg", alt="") 
+                                    div.popular-area__discript 
+                                        h4 Phones & Accessories
+                                        ul 
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                            li 
+                                                a(href="#") Hot Categories
+                                        a(href="#") View All
+                    span.slick-arrow.next.popular-button-next
+                        i(class="fa-solid fa-angle-right")
+    //- End popular area
+
+    //- new letter area
+    div.new-letter-area 
+        div.container 
+            div.new-letter-area__wrap 
+                div.new-letter-area__title 
+                    h2 Sign Up For Newsletters
+                    p Be the First to Know. Sign up for newsletter today !
+                div.new-letter-area__form 
+                    form(action="#")
+                        div.new-letter-area__signup 
+                            input(type="email" placeholder="Enter your email here..." class="email")
+                            div.clear 
+                                input(type="submit" value="Sign Up" class="button")
+    //- End new letter area
+

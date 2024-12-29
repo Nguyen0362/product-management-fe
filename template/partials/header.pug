@@ -1,0 +1,64 @@
+include ../mixins/search-category.pug
+
+header.header-wrapper
+    //- header top
+    div.header-top
+        div.container
+            div.header-top__wrap
+                div.header-top__logo
+                    a(href="#")
+                        img(src="assets/images/logo.png", alt="")
+                div.header-top__right
+                    div.header-top__right-search
+                        +search-category("Tìm kiếm")
+                    div.header-top__tools 
+                        a(href="#").offcanvas-toggle.offcanvas-wishlist
+                            i(class="fa-regular fa-heart")
+                            span(class="title") Wishlist
+                        a(href="#").offcanvas-toggle.offcanvas-cart
+                            i(class="fa-solid fa-cart-shopping")
+                            span(class="title") Cart
+                        div.offcanvas-toggle.offcanvas-menu
+                            i(class="fa-solid fa-bars")
+    //- End header top
+    
+    div.header__search-mobile
+        div.container
+            +search-category('<i class="fa-solid fa-magnifying-glass"></i>')
+
+    //- header menu
+    div(class="header-menu")
+        div.container
+            div.header-menu__wrap
+                div.header-menu__left
+                    h4.header-menu__title
+                        i(class="fa-solid fa-bars")
+                        | Browse Categories
+                        i(class="fa-solid fa-angle-down")
+                    ul.display-none 
+                        li 
+                            a(href="#") Television
+                        li 
+                            a(href="#") Digital Cameras
+                div.header-menu__right
+                    nav 
+                        ul 
+                            li 
+                                |Home 
+                                i(class="fa-solid fa-angle-down")
+                            li 
+                                |shop 
+                                i(class="fa-solid fa-angle-down")
+                            li 
+                                |Pages 
+                                i(class="fa-solid fa-angle-down")
+                            li 
+                                |Blog 
+                                i(class="fa-solid fa-angle-down")
+                            li 
+                                |Custom Menu 
+                                i(class="fa-solid fa-angle-down")
+                            li 
+                                |Contact Us 
+    //- End header menu
+    

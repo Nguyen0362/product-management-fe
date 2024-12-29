@@ -1,0 +1,29 @@
+include product-item.pug
+
+mixin tab-content-item(numberTab, img1, img2, title, price)
+    div(class=`swiper mySwiper-tab-${numberTab} my-pd`)
+        div.swiper-wrapper
+            div.swiper-slide
+                div.arrivals-area__list
+                    div.slide-item
+                        +product-item(img1, img2, title, price)
+            div.swiper-slide
+                div.arrivals-area__list
+                    div.slide-item
+                        +product-item(img1, img2, title, price)
+            div.swiper-slide
+                div.arrivals-area__list
+                    div.slide-item
+                        +product-item(img1, img2, title, price)
+            div.swiper-slide
+                div.arrivals-area__list
+                    div.slide-item
+                        +product-item(img1, img2, title, price)
+            div.swiper-slide
+                div.arrivals-area__list
+                    div.slide-item
+                        +product-item(img1, img2, title, price)
+            div.swiper-slide
+                div.arrivals-area__list
+                    div.slide-item
+                        +product-item(img1, img2, title, price)

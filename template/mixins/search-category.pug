@@ -1,0 +1,9 @@
+mixin search-category(button)
+    div.header-top__search
+        form(action="#")
+            i(class="fa-solid fa-angle-down")
+            div.header-top__category
+                select
+                    option(value="1") Tất cả danh mục
+            input(type="text" placeholder="Nhập từ khóa tìm kiếm...")
+            button(type="submit") !{button}

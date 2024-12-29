@@ -1,0 +1,30 @@
+mixin best-seller-item(img1, img2, topic, title, quantity, content, old_price, new_price)
+    article
+        div.product-inner 
+            div.img-block 
+                a(href="#") 
+                    img(src=img1, alt="")
+                    img(src=img2, alt="")
+                div.add-to-link 
+                    ul 
+                        li 
+                            a(href="#")
+                                i(class="fa-solid fa-magnifying-glass")
+                        li 
+                            a(href="#")
+                                i(class="fa-regular fa-heart")
+                        li 
+                            a(href="#")
+                                i(class="fa-solid fa-rotate")
+        div.product-desc 
+            a(href="#") #{topic}
+            h2 
+                a(href="#") #{title}
+            div.availability-list   
+                | Availability:
+                span  #{quantity}
+            p.content #{content}
+            div.price 
+                ul 
+                    li #{old_price}
+                    li #{new_price}
