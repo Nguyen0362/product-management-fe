@@ -446,3 +446,27 @@ if(navLink.length > 0 && tabPane.length > 0){
     })
 }
 // End arrival tab
+
+//scroll up
+const scrollUp = document.getElementById("scrollUp");
+
+if(scrollUp){
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY; // Lấy vị trí cuộn dọc
+        if(scrollPosition >= 400){
+            scrollUp.style.display = "block";
+        } else {
+            scrollUp.style.display = "none";
+        }
+    });
+
+    scrollUp.addEventListener('click', (even) => {
+        even.preventDefault();
+
+        window.scrollTo({
+            top: 0, // Vị trí đầu trang
+            behavior: 'smooth' // Cuộn mượt mà
+        });
+    });
+}
+//End scroll up
